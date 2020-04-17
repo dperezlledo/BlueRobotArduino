@@ -1,0 +1,32 @@
+Este es un ejemplo de programa para robot (pequeño color azul) teledirigido desde PC. Alimentado desde el móvil 
+(placa Arduino unicamente), donde es posible añadirle app externa de streaming de video para ver recorrido
+del robot por casa. 
+
+El proyecto en conjunto lee los botones pulsados de dirección y luz, desde la aplicación BlackRobotDesktopJava
+y los transmite usando TCP al móvil Android. El móvil a su vez lo transmite a la placa Arduino haciendo 
+uso del cable serie USB con adaptador OTG (ver imágenes), una vez recibido los movimientos en arduino este 
+habilita pines de puente H (keyes L298) para mover los motores en las direcciones adelante (AD), atras (AT), 
+izquierda (IZ), derecha (DE) y luz (LU1 | LU0).
+
+El uso de este programa requiere además:
+
+El programa BlueRobotArduino
+----------------------------
+- Realizado en Arduino IDE 1.8.11
+- Disponible en github: https://github.com/dperezlledo/BlueRobotArduino.git
+
+El programa BlackRobotAndroidJava
+---------------------------------
+- Realizado en Android Studio 3.6.2
+- Con el API 23 Marshmallow
+- Disponible en github: https://github.com/dperezlledo/BlackRobotAndroidJava.git
+
+El programa BlackRobotDesktopJava 
+---------------------------------
+- Realizado en Apache Netbeans 11 
+- Disponible en github: https://github.com/dperezlledo/BlackRobotDesktopJava.git
+
+ 
+
+
+
